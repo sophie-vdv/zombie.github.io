@@ -1,0 +1,183 @@
+@white : #fff;
+
+body {
+  width       : 100vw;
+  height      : 100vh;
+  color       : @white;
+  font-family : Helvetica;
+  margin      : 0;
+}
+
+.section-1 {
+  background : #e53935;
+  background : -webkit-linear-gradient(to left, #e53935, #e35d5b);
+  background : linear-gradient(to left, #e53935, #e35d5b);
+}
+
+.section-2 {
+  background : #348F50; /* fallback for old browsers */
+  background : -webkit-linear-gradient(to left, #348F50, #56B4D3); /* Chrome 10-25, Safari 5.1-6 */
+  background : linear-gradient(to left, #348F50, #56B4D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-3 {
+  background : #24C6DC; /* fallback for old browsers */
+  background : -webkit-linear-gradient(to left, #24C6DC, #514A9D); /* Chrome 10-25, Safari 5.1-6 */
+  background : linear-gradient(to left, #24C6DC, #514A9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-4 {
+  background : #EC6F66; /* fallback for old browsers */
+  background : -webkit-linear-gradient(to left, #EC6F66, #F3A183); /* Chrome 10-25, Safari 5.1-6 */
+  background : linear-gradient(to left, #EC6F66, #F3A183); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo-github {
+  position : absolute;
+  right    : 60px;
+  top      : 60px;
+  z-index  : 1;
+
+  @media only screen and (max-width : 900px) {
+    right : 20px;
+    top   : 30px;
+  }
+}
+
+.logo {
+  font-size      : 11px;
+  letter-spacing : 2px;
+  display        : flex;
+  align-items    : center;
+  position       : absolute;
+  left           : 60px;
+  top            : 40px;
+  font-weight    : 300;
+  line-height    : 16px;
+  z-index        : 1;
+
+  span {
+    border-left  : 2px solid white;
+    padding-left : 16px;
+  }
+
+  @media only screen and (max-width : 900px) {
+    left : 20px;
+    top  : 20px;
+  }
+
+  img {
+    width        : 60px;
+    margin-right : 16px;
+  }
+}
+
+.content-container {
+  text-align : center;
+
+  .title {
+    font-size   : 85px;
+    font-family : "MarkMyWords";
+
+    @media only screen and (max-width : 500px) {
+      font-size : 50px;
+    }
+  }
+}
+
+.content {
+  margin    : 80px auto;
+  max-width : 900px;
+  width     : 100%;
+
+  @media only screen and (max-width : 530px) {
+    margin : 60px auto;
+  }
+
+  a {
+    color           : @white;
+    font-family     : Helvetica;
+    text-decoration : none;
+    text-align      : center;
+    line-height     : 120px;
+    width           : 22%;
+    height          : 120px;
+    display         : inline-block;
+    float           : left;
+    margin          : 16px 16px;
+
+    &:first-child {
+      margin-left : 0;
+    }
+
+    &:last-child {
+      margin-right : 0;
+    }
+
+    @media only screen and (max-width : 900px) {
+      width  : 44%;
+      margin : 16px 16px;
+
+      &:first-child {
+        margin-left : 16px;
+      }
+
+      &:last-child {
+        margin-right : 16px;
+      }
+    }
+
+    @media only screen and (max-width : 530px) {
+      width : 40%;
+    }
+  }
+  .case {
+    width               : 100%;
+    display             : inline-block;
+    height              : 120px;
+    border              : 2px solid white;
+    border-radius       : 5px;
+
+    background-image    : linear-gradient(to top, transparent, transparent 50%, #fff 50%, #fff);
+    background-position : 0 100%;
+    background-size     : 100% 200%;
+    transition          : all .15s ease-in;
+    font-weight         : 300;
+    font-size           : 16px;
+    letter-spacing      : 2px;
+
+    &:hover {
+      background-position : 0 0;
+      color               : #e44542;
+      letter-spacing      : 2px;
+      font-weight         : 400;
+    }
+  }
+}
+
+.carlton {
+  position : absolute;
+  bottom   : 0;
+  right    : 100px;
+  z-index  : 50;
+  display  : none;
+}
+
+.bob {
+  position : absolute;
+  bottom   : 0;
+  left     : 100px;
+  z-index  : 50;
+  display  : none;
+}
+
+.command {
+  position  : absolute;
+  width     : auto;
+  top       : 100px;
+  left      : 60px;
+  font-size : 20px;
+  display   : none;
+}
+
+

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Norican" rel="stylesheet">
+
+    <title>Playground</title>
+</head>
+<body>
+
+<div class="logo">
+    <img src="assets/playground.png" alt="#">
+    <span>So much code <br> So much fun</span>
+</div>
+<a href="https://github.com/sophie-vdv" class="logo-github">
+    <img src="assets/github.png" alt="#">
+</a>
+
+<div id="fullpage" class="content-container">
+    <div class="section section-1">
+        <div class="title">Playground</div>
+    </div>
+    <div class="section section-2">
+        <div class="title">Gradient Everywhere</div>
+    </div>
+    <div class="section section-3">
+        <div class="title"> Because is so cool</div>
+    </div>
+    <div class="section section-4">
+        <div class="title">Don't you think?</div>
+    </div>
+</div>
+
+
+<!--
+<div class="command">
+    &#65514;
+    &#65514;
+    &#65516;
+    &#65516;
+    &#65513;
+    &#65515;
+    &#65513;
+    &#65515;
+</div>
+<div class="content-container">
+    <div class="title">Playground</div>
+
+    <div class="content">
+        <a href="#">
+            <div class="case">SVG</div>
+        </a>
+        <a href="#">
+            <div class="case">CSS</div>
+        </a>
+        <a href="#">
+            <div class="case">JS-JQUERY</div>
+        </a>
+        <a href="#">
+            <div class="case">AJAX</div>
+        </a>
+    </div>
+
+    <div class="content">
+        <a href="#">
+            <div class="case">SVG</div>
+        </a>
+        <a href="#">
+            <div class="case">CSS</div>
+        </a>
+        <a href="#">
+            <div class="case">JS-JQUERY</div>
+        </a>
+        <a href="#">
+            <div class="case">AJAX</div>
+        </a>
+    </div>
+</div>
+
+<div class="bob img-easter">
+    <img src="assets/bob.gif" alt="">
+</div>
+
+<div class="carlton img-easter">
+    <img src="assets/carlton.gif" alt="">
+</div>-->
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/main.min.js"></script>
+
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+<script>
+    if (window.addEventListener) {
+        var kkeys = [], konami = "38,38,40,40,37,39,37,39";
+        window.addEventListener("keydown", function (e) {
+            kkeys.push(e.keyCode);
+            if (kkeys.toString().indexOf(konami) >= 0) {
+                $(".img-easter").fadeIn(200);
+            }
+        }, true);
+    }
+</script>
+</html>
